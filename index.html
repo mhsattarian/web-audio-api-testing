@@ -5,15 +5,20 @@
   </head>
   <body>
     <div class="audio-container">
-      <audio
-        id="input-audio"
-        controls
-        src="https://webaudioapi.com/samples/filter/techno.wav"
-      ></audio>
+      <audio id="input-audio" src="techno.wav"></audio>
     </div>
     <button data-playing="false" role="switch" aria-checked="false">
       <span>Play/Pause</span>
     </button>
+    <label>
+      Gain
+      <input type="range" id="volume" min="0" max="2" value="1" step="0.01"
+    /></label>
+    <label>
+      Pan
+      <input type="range" id="panner" min="-1" max="1" value="0" step="0.01"
+    /></label>
+
     <script src="script.js"></script>
   </body>
 </html>
